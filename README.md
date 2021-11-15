@@ -6,9 +6,7 @@
 
 Dino Jump is simple modified version of Google Chrome dino made with python and pygame.
 
-<p align='center'>
-	<img src='![image](https://user-images.githubusercontent.com/72703981/141836392-a3e9cf8a-e4a3-464a-8d08-3340d143dc0f.png)' width=620 height=218>
-</p>
+![image](https://user-images.githubusercontent.com/72703981/141836438-33d580ca-6f50-418d-bccb-c9b8bd7dae66.png)
 
 =
 
