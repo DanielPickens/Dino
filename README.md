@@ -39,7 +39,7 @@ cheatcodes are case-insensitive
 
 ## Starting Game
 ```
-cd https://github.com/DanielPickens/Dino
+cd Dino-Jump
 
 python main.py
 ```
