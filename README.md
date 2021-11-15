@@ -40,4 +40,10 @@ This game has few cheatcodes which you can try. Just type the cheatcode anytime 
 
 cheatcodes are case-insensitive
 
+## Starting Game
+```
+cd https://github.com/DanielPickens/Dino
+
+python main.py
+
 
