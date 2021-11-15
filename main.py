@@ -1,4 +1,4 @@
-# Dino Jump
+# Dino
 
 # Author : Daniel Pickens
 # Date : November 7th, 2021
