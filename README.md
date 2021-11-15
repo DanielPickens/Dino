@@ -45,5 +45,4 @@ cheatcodes are case-insensitive
 cd https://github.com/DanielPickens/Dino
 
 python main.py
-
-
+```
