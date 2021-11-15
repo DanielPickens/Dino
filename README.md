@@ -36,10 +36,3 @@ This game has few cheatcodes which you can try. Just type the cheatcode anytime 
 * SPEEDUP -> increase speed by 2
 
 cheatcodes are case-insensitive
-
-## Starting Game
-```
-cd Dino-Jump
-
-python main.py
-```
