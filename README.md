@@ -1,10 +1,10 @@
-# Dino Jump
+# Dino Run
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
-Dino Jump is simple modified version of Google Chrome dino made with python and pygame.
+Dino Run is simple modified version of Google Chrome dino made with python and pygame.
 
 ![image](https://user-images.githubusercontent.com/72703981/141836438-33d580ca-6f50-418d-bccb-c9b8bd7dae66.png)
 
