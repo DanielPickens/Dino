@@ -1,7 +1,7 @@
-# Dino
+# Dino Jump
 
 # Author : Daniel Pickens
-# Date : Sunday, 17 October, 2021
+# Date : November 7th, 2021
 
 import random
 import pygame
