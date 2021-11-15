@@ -1,18 +1,16 @@
-# Dino Run
+# Dino Jump
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-swag.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
-Dino Run is simple modified version of Google Chrome dino made with python and pygame.
+Dino Jump is simple modified version of Google Chrome dino made with python and pygame.
 
 <p align='center'>
-	<img src='app.png' width=620 height=218>
+	<img src='![image](https://user-images.githubusercontent.com/72703981/141836392-a3e9cf8a-e4a3-464a-8d08-3340d143dc0f.png)' width=620 height=218>
 </p>
 
-## How to Download
-
-Download this project from here [Download Dino Run](https://downgit.github.io/#/home?url=https://github.com/pyGuru123/Python-Games/tree/master/Dino)
+=
 
 ## Requirements
 
@@ -44,8 +42,4 @@ This game has few cheatcodes which you can try. Just type the cheatcode anytime 
 
 cheatcodes are case-insensitive
 
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+.
