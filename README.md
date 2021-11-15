@@ -1,7 +1,7 @@
-# Dino Run
+# Dino
 
 
-Dino Run is a simple modified version of Google Chrome's dino made with python and pygame.
+Dino is a simple modified version of Google Chrome's dino made with python and pygame.
 
 ![image](https://user-images.githubusercontent.com/72703981/141836438-33d580ca-6f50-418d-bccb-c9b8bd7dae66.png)
 
