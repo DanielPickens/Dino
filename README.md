@@ -5,7 +5,6 @@ Dino is a simple modified version of Google Chrome's dino made with python and p
 ![image](https://user-images.githubusercontent.com/72703981/141836438-33d580ca-6f50-418d-bccb-c9b8bd7dae66.png)
 
 
-
 ## Requirements
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install following packages :-
