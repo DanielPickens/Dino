@@ -2,9 +2,9 @@ FROM python:3.8-slim-buster
 
 WORKDIR /app
 
-COPY . /app
+COPY requirements.txt /tmp/
 
-RUN  pip install --no-cache-dir -r requirements.txt
+RUN pip install --requirement /tmp/requirements.txt
 
 EXPOSE 5000
 
