@@ -40,3 +40,12 @@ This game has few cheatcodes which you can try. Just type the cheatcode anytime 
 * SPEEDUP -> increase speed by 2
 
 cheatcodes are case-insensitive
+
+
+## Execution
+
+```
+git clone https://github.com/DanielPickens/dino
+cd dino
+python main.py
+```
