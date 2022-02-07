@@ -1,4 +1,8 @@
 # Dino
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+
 
 Dino is a simple modified version of Google Chrome's Dino Run made with python and pygame.
 
