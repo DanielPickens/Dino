@@ -110,7 +110,7 @@ class Dino():
 
 	def draw(self, win):
 		win.blit(self.image, self.rect)
-#load cactus object
+#loads cactus object
 class Cactus(pygame.sprite.Sprite):
 	def __init__(self, type): # allocation of memory location, and representation of the instance of class as parameter called
 		super(Cactus, self).__init__()
@@ -138,7 +138,7 @@ class Cactus(pygame.sprite.Sprite):
 
 	def draw(self, win):
 		win.blit(self.image, self.rect)
-# load's Ptera object
+# loads Ptera object
 class Ptera(pygame.sprite.Sprite):
 	def __init__(self, x, y):
 		super(Ptera, self).__init__()
@@ -192,7 +192,7 @@ class Cloud(pygame.sprite.Sprite):
 
 	def draw(self, win):
 		win.blit(self.image, self.rect)
-#load star object
+#loads star object
 class Star(pygame.sprite.Sprite):
 	def __init__(self, x, y, type):
 		super(Star, self).__init__()
