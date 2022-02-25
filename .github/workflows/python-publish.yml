@@ -1,4 +1,4 @@
-ame: install-pygame
+name: install-pygame
 on: [push]
 jobs:
   check-pygame:
