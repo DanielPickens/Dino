@@ -1,4 +1,4 @@
-name: ci run-pygame
+name: ci dino-pygame
 on: [push]
 jobs:
   check-pygame:
