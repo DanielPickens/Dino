@@ -1,4 +1,4 @@
-name: run-pygame
+name: ci run-pygame
 on: [push]
 jobs:
   check-pygame:
