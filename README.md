@@ -27,14 +27,6 @@ Controls:
 * Press escape or q key to end the game.
 
 
-Cheatcodes:
-* GODMODE -> immortal jutsu ( can't die )
-* DAYMODE -> Swap between day and night
-* LYAGAMI -> automatic jump and duck
-* IAMRICH -> add 10,000 to score
-* HISCORE -> highscore is 99999
-* SPEEDUP -> increase speed by 2
-
 ## Quick Start
 ```
 cd dino
