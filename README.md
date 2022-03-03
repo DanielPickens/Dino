@@ -39,7 +39,6 @@ cheatcodes are case-insensitive
 
 
 ## Quick Start
-
 ```
 cd dino
 python main.py
