@@ -1,19 +1,15 @@
 # Dino
+
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-
-
-
-Dino is my modified version of Google Chrome's Dino Run made with python and pygame.
 
 
 ![image](https://user-images.githubusercontent.com/72703981/141836438-33d580ca-6f50-418d-bccb-c9b8bd7dae66.png)
 
+Dino is my 2D platformer game made with Pygame.
 
 
-## Requirements
+## Requirements 
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install following packages :-
 * Pygame
 
 ```bash
@@ -42,10 +38,9 @@ This game has few cheatcodes which you can try. Just type the cheatcode anytime 
 cheatcodes are case-insensitive
 
 
-## Execution
+## Quick Start
 
 ```
-git clone https://github.com/DanielPickens/dino
 cd dino
 python main.py
 ```
