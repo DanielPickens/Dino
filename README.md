@@ -44,7 +44,6 @@ cd dino
 python main.py
 ```
 
-## Contributing
 
 ## Contributing
 
