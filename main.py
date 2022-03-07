@@ -74,7 +74,7 @@ def reset():
 
 	dino.reset()
 
-# CHEATCODES *****************************************************************
+
 
 # GODMODE -> immortal jutsu ( can't die )
 # DAYMODE -> Swap between day and night
@@ -88,7 +88,7 @@ GODMODE = False
 DAYMODE = False
 LYAGAMI = False
 
-# setting environment variables
+# Environment variables
 
 counter = 0
 enemy_time = 100
@@ -104,7 +104,8 @@ high_score = 0
 
 start_page = True
 mouse_pos = (-1, -1)
-# Running logic that for event in the game session , it makes a event get call if evenet type in game has ended
+
+
 running = True
 while running:
 	jump = False
