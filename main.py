@@ -39,13 +39,12 @@ replay_rect.y = 100
 numbers_img = pygame.image.load('Assets/numbers.png')
 numbers_img = pygame.transform.scale(numbers_img, (120, 12))
 
-# SOUNDS *********************************************************************
+
 
 jump_fx = pygame.mixer.Sound('Sounds/jump.wav')
 die_fx = pygame.mixer.Sound('Sounds/die.wav')
 checkpoint_fx = pygame.mixer.Sound('Sounds/checkPoint.wav')
 
-# OBJECTS & GROUPS ***********************************************************
 
 ground = Ground()
 dino = Dino(50, 160)
@@ -55,7 +54,7 @@ ptera_group = pygame.sprite.Group()
 cloud_group = pygame.sprite.Group()
 stars_group = pygame.sprite.Group()
 
-# FUNCTIONS ******************************************************************
+
 
 def reset():
 	global counter, SPEED, score, high_score
@@ -76,12 +75,7 @@ def reset():
 
 
 
-# GODMODE -> immortal jutsu ( can't die )
-# DAYMODE -> Swap between day and night
-# LYAGAMI -> automatic jump and duck
-# IAMRICH -> add 10,000 to score
-# HISCORE -> highscore is 99999
-# SPEEDUP -> increase speed by 2
+
 
 keys = []
 GODMODE = False
