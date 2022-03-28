@@ -1,12 +1,8 @@
 # Dino
 
-<<<<<<< HEAD
-#
-=======
 # Author : Daniel Pickens
 # Date : November 7th, 2021
 
->>>>>>> 04c8fa7094cbd706326ffd7dab53ce4abcef968e
 
 import random
 import pygame
@@ -26,12 +22,7 @@ WHITE = (225,225,225)
 BLACK = (0, 0, 0)
 GRAY = (32, 33, 36)
 
-<<<<<<< HEAD
-
-
-=======
 # Image variables declared for main game loop that take in single pass reference parameter as arguments for the image rendering
->>>>>>> 04c8fa7094cbd706326ffd7dab53ce4abcef968e
 
 start_img = pygame.image.load('Assets/start_img.png')
 start_img = pygame.transform.scale(start_img, (60, 64))
@@ -54,10 +45,6 @@ jump_fx = pygame.mixer.Sound('Sounds/jump.wav')
 die_fx = pygame.mixer.Sound('Sounds/die.wav')
 checkpoint_fx = pygame.mixer.Sound('Sounds/checkPoint.wav')
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 04c8fa7094cbd706326ffd7dab53ce4abcef968e
 
 ground = Ground()
 dino = Dino(50, 160)
@@ -67,12 +54,6 @@ ptera_group = pygame.sprite.Group()
 cloud_group = pygame.sprite.Group()
 stars_group = pygame.sprite.Group()
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 04c8fa7094cbd706326ffd7dab53ce4abcef968e
 
 # Logic to reset the game if Dino dies
 def reset():
@@ -92,22 +73,16 @@ def reset():
 
 	dino.reset()
 
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> 04c8fa7094cbd706326ffd7dab53ce4abcef968e
 
 keys = []
 GODMODE = False
 DAYMODE = False
 LYAGAMI = False
 
-<<<<<<< HEAD
-=======
 # Environment variables
->>>>>>> 04c8fa7094cbd706326ffd7dab53ce4abcef968e
 
 counter = 0
 enemy_time = 100
