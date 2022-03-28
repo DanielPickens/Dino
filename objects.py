@@ -110,9 +110,9 @@ class Dino():
 
 	def draw(self, win):
 		win.blit(self.image, self.rect)
-
+#loads cactus object
 class Cactus(pygame.sprite.Sprite):
-	def __init__(self, type):
+	def __init__(self, type): # allocation of memory location, and representation of the instance of class as parameter called
 		super(Cactus, self).__init__()
 
 		self.image_list = []
@@ -128,7 +128,7 @@ class Cactus(pygame.sprite.Sprite):
 		self.rect.x = WIDTH + 10
 		self.rect.bottom = 165
 
-	def update(self, speed, dino):
+	def update(self, speed, dino):  #updates function based off if dino dies or lives, from speed being confirmed as instantiated from the instance of the object
 		if dino.alive:
 			self.rect.x -= speed
 			if self.rect.right <= 0:
@@ -138,7 +138,7 @@ class Cactus(pygame.sprite.Sprite):
 
 	def draw(self, win):
 		win.blit(self.image, self.rect)
-
+# loads Ptera object
 class Ptera(pygame.sprite.Sprite):
 	def __init__(self, x, y):
 		super(Ptera, self).__init__()
@@ -174,7 +174,7 @@ class Ptera(pygame.sprite.Sprite):
 	def draw(self, win):
 		win.blit(self.image, self.rect)
 
-
+# load cloud object
 class Cloud(pygame.sprite.Sprite):
 	def __init__(self, x, y):
 		super(Cloud, self).__init__()
@@ -192,7 +192,7 @@ class Cloud(pygame.sprite.Sprite):
 
 	def draw(self, win):
 		win.blit(self.image, self.rect)
-
+#loads star object
 class Star(pygame.sprite.Sprite):
 	def __init__(self, x, y, type):
 		super(Star, self).__init__()
