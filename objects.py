@@ -2,6 +2,23 @@ import pygame
 
 SCREEN = WIDTH, HEIGHT = (600, 200)
 
+@staticmethod
+def reset():
+	global counter, SPEED, score, high_score
+
+	if score and score >= high_score:
+		high_score = score
+
+	counter = 0
+	SPEED = 5
+	score = 0
+
+	cactus_group.empty()
+	ptera_group.empty()
+	cloud_group.empty()
+	stars_group.empty()
+	
+
 class Ground():
 	def __init__(self):
 		self.image = pygame.image.load('Assets/ground.png')
@@ -162,6 +179,11 @@ class Ptera(pygame.sprite.Sprite):
 			self.rect.x -= speed
 			if self.rect.right <= 0:
 				self.kill()
+			if self.counter >= 10:  # checks for the counter to be greater than 10, if so, it will change the index of the image list
+				# so that the image changes every 10 frames and we can see the animation measured in frames
+				self.index = (self.index + 1) % 2
+				self.image = self.image_list[self.index]
+				self.counter = 0
 
 			self.counter += 1
 			if self.counter >= 6:
