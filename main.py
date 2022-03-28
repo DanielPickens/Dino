@@ -1,7 +1,6 @@
 # Dino
 
-# Author : Prajjwal Pathak (pyguru)
-# Date : Sunday, 17 October, 2021
+#
 
 import random
 import pygame
@@ -15,13 +14,14 @@ win = pygame.display.set_mode(SCREEN, pygame.NOFRAME)
 clock = pygame.time.Clock()
 FPS = 60
 
-# COLORS *********************************************************************
+
 
 WHITE = (225,225,225)
 BLACK = (0, 0, 0)
 GRAY = (32, 33, 36)
 
-# IMAGES *********************************************************************
+
+
 
 start_img = pygame.image.load('Assets/start_img.png')
 start_img = pygame.transform.scale(start_img, (60, 64))
@@ -38,13 +38,13 @@ replay_rect.y = 100
 numbers_img = pygame.image.load('Assets/numbers.png')
 numbers_img = pygame.transform.scale(numbers_img, (120, 12))
 
-# SOUNDS *********************************************************************
+
 
 jump_fx = pygame.mixer.Sound('Sounds/jump.wav')
 die_fx = pygame.mixer.Sound('Sounds/die.wav')
 checkpoint_fx = pygame.mixer.Sound('Sounds/checkPoint.wav')
 
-# OBJECTS & GROUPS ***********************************************************
+
 
 ground = Ground()
 dino = Dino(50, 160)
@@ -54,7 +54,9 @@ ptera_group = pygame.sprite.Group()
 cloud_group = pygame.sprite.Group()
 stars_group = pygame.sprite.Group()
 
-# FUNCTIONS ******************************************************************
+
+
+
 
 def reset():
 	global counter, SPEED, score, high_score
@@ -73,21 +75,12 @@ def reset():
 
 	dino.reset()
 
-# CHEATCODES *****************************************************************
-
-# GODMODE -> immortal jutsu ( can't die )
-# DAYMODE -> Swap between day and night
-# LYAGAMI -> automatic jump and duck
-# IAMRICH -> add 10,000 to score
-# HISCORE -> highscore is 99999
-# SPEEDUP -> increase speed by 2
 
 keys = []
 GODMODE = False
 DAYMODE = False
 LYAGAMI = False
 
-# VARIABLES ******************************************************************
 
 counter = 0
 enemy_time = 100
@@ -256,6 +249,42 @@ while running:
 			string_score = f'{high_score}'.zfill(5)
 			for i, num in enumerate(string_score):
 				win.blit(numbers_img, (455+11*i, 10), (10*int(num), 0, 10, 12))
+		if not dino.alive:
+			if not LYAGAMI:
+				if not dino.dead_counter:
+					die_fx.play()
+				dino.dead_counter += 1
+				if dino.dead_counter > 3:
+					dino.dead_counter = 0
+					dino.alive = True
+					dino.rect.x = 100
+					dino.rect.y = HEIGHT - dino.rect.height - 30
+					dino.dead = False
+					score = 0
+					SPEED = 5
+					enemy_time = 200
+					cloud_time = 200
+					stars_time = 200
+					counter = 0
+					cactus_group = pygame.sprite.Group()
+					ptera_group = pygame.sprite.Group()
+					cloud_group = pygame.sprite.Group()
+					stars_group = pygame.sprite.Group()
+					ground = Ground(WIDTH, HEIGHT)
+					dino = Dino(WIDTH, HEIGHT)
+					if LYAGAMI:
+						dino.rect.x = 100
+						dino.rect.y = HEIGHT - dino.rect.height - 30
+						dino.dead = False
+						score = 0
+						SPEED = 5
+						enemy_time = 200
+						cloud_time = 200
+						stars_time = 200
+						counter = 0
+						cactus_group = pygame.sprite.Group()
+						ptera_group = pygame.sprite.Group()
+						cloud_group = pygame.sprite
 
 		if not dino.alive:
 			win.blit(game_over_img, (WIDTH//2-100, 55))
