@@ -89,7 +89,7 @@ enemy_time = 100
 cloud_time = 500
 stars_time = 175
 
-SPEED = 5
+SPEED = 10
 jump = False
 duck = False
 
