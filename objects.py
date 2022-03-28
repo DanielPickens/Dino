@@ -180,7 +180,7 @@ class Ptera(pygame.sprite.Sprite):
 			if self.rect.right <= 0:
 				self.kill()
 			if self.counter >= 10:  # checks for the counter to be greater than 10, if so, it will change the index of the image list
-				# so that the image changes every 10 frames and we can see the animation measured in frames
+				# so that the image changes every 10 frames and we can see the animation measured in frames. 
 				self.index = (self.index + 1) % 2
 				self.image = self.image_list[self.index]
 				self.counter = 0
