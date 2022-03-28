@@ -252,43 +252,9 @@ while running:
 			string_score = f'{high_score}'.zfill(5)
 			for i, num in enumerate(string_score):
 				win.blit(numbers_img, (455+11*i, 10), (10*int(num), 0, 10, 12))
-		if not dino.alive:
-			if not LYAGAMI:
-				if not dino.dead_counter:
-					die_fx.play()
-				dino.dead_counter += 1
-				if dino.dead_counter > 3:
-					dino.dead_counter = 0
-					dino.alive = True
-					dino.rect.x = 100
-					dino.rect.y = HEIGHT - dino.rect.height - 30
-					dino.dead = False
-					score = 0
-					SPEED = 5
-					enemy_time = 200
-					cloud_time = 200
-					stars_time = 200
-					counter = 0
-					cactus_group = pygame.sprite.Group()
-					ptera_group = pygame.sprite.Group()
-					cloud_group = pygame.sprite.Group()
-					stars_group = pygame.sprite.Group()
-					ground = Ground(WIDTH, HEIGHT)
-					dino = Dino(WIDTH, HEIGHT)
-					if LYAGAMI:
-						dino.rect.x = 100
-						dino.rect.y = HEIGHT - dino.rect.height - 30
-						dino.dead = False
-						score = 0
-						SPEED = 5
-						enemy_time = 200
-						cloud_time = 200
-						stars_time = 200
-						counter = 0
-						cactus_group = pygame.sprite.Group()
-						ptera_group = pygame.sprite.Group()
-						cloud_group = pygame.sprite
+	
 
+		
 		if not dino.alive:
 			win.blit(game_over_img, (WIDTH//2-100, 55))
 			win.blit(replay_img, replay_rect)
