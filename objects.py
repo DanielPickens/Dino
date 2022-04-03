@@ -2,6 +2,10 @@ import pygame
 
 SCREEN = WIDTH, HEIGHT = (600, 200)
 
+def staticmethod(func):
+	func.__staticmethod__ = True
+	return func
+
 @staticmethod
 def reset():
 	global counter, SPEED, score, high_score
@@ -10,13 +14,15 @@ def reset():
 		high_score = score
 
 	counter = 0
-	SPEED = 5
+	SPEED = 30
 	score = 0
 
 	cactus_group.empty()
 	ptera_group.empty()
 	cloud_group.empty()
 	stars_group.empty()
+
+func = lambda: None
 	
 
 class Ground():

@@ -63,7 +63,7 @@ def reset():
 		high_score = score
 
 	counter = 0
-	SPEED = 5
+	SPEED = 15
 	score = 0
 
 	cactus_group.empty()
@@ -72,10 +72,6 @@ def reset():
 	stars_group.empty()
 
 	dino.reset()
-
-
-
-
 
 keys = []
 GODMODE = False
@@ -90,8 +86,8 @@ cloud_time = 500
 stars_time = 175
 
 SPEED = 10
-jump = False
-duck = False
+JUMP = False
+DUCK = False
 
 score = 0
 high_score = 0
@@ -102,7 +98,7 @@ mouse_pos = (-1, -1)
 
 running = True
 while running:
-	jump = False
+	JUMP = False
 	if DAYMODE:
 		win.fill(WHITE)
 	else:
@@ -120,17 +116,17 @@ while running:
 				if start_page:
 					start_page = False
 				elif dino.alive:
-					jump = True
+					JUMP = True
 					jump_fx.play()
 				else:
 					reset()
 
 			if event.key == pygame.K_UP:
-				jump = True
+				JUMP = True
 				jump_fx.play()
 
 			if event.key == pygame.K_DOWN:
-				duck = True
+				DUCK = True
 
 			key = pygame.key.name(event.key)
 			keys.append(key)
@@ -155,10 +151,10 @@ while running:
 
 		if event.type == pygame.KEYUP:
 			if event.key == pygame.K_SPACE or event.key == pygame.K_UP:
-				jump = False
+				JUMP = False
 
 			if event.key == pygame.K_DOWN:
-				duck = False
+				DUCK = False
 
 		if event.type == pygame.MOUSEBUTTONDOWN:
 			mouse_pos = event.pos
@@ -207,7 +203,7 @@ while running:
 					if LYAGAMI:
 						dx = cactus.rect.x - dino.rect.x
 						if 0 <= dx <= (70 + (score//100)):
-							jump = True
+							JUMP = True
 
 					if pygame.sprite.collide_mask(dino, cactus):
 						SPEED = 0
@@ -219,11 +215,11 @@ while running:
 						dx = ptera.rect.x - dino.rect.x
 						if 0 <= dx <= 70:
 							if dino.rect.top <= ptera.rect.top:
-								jump = True
+								JUMP = True
 							else:
-								duck = True
+								DUCK = True
 						else:
-							duck = False
+							DUCK = False
 
 					if pygame.sprite.collide_mask(dino, ptera):
 						SPEED = 0
@@ -240,7 +236,7 @@ while running:
 		cactus_group.draw(win)
 		ptera_group.update(SPEED-1, dino)
 		ptera_group.draw(win)
-		dino.update(jump, duck)
+		dino.update(JUMP, DUCK)
 		dino.draw(win)
 
 		string_score = str(score).zfill(5)
